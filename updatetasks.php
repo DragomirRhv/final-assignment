@@ -4,6 +4,8 @@
     require_once 'config/settings.php';
     require_once 'functions.php';
 
+    /* Just want to added some comment */
+    
     $sql = "SELECT 
                 `id`,
                 `task_place`
