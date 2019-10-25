@@ -1,0 +1,28 @@
+/* Liujiianmaocao Font */
+@font-face {
+    font-family: 'liu_jian_mao_caoregular';
+    src: url('../fonts/liuji/liujianmaocao-regular-webfont.eot');
+    src: url('../fonts/liuji/liujianmaocao-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.woff2') format('woff2'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.woff') format('woff'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.ttf') format('truetype'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.svg#liu_jian_mao_caoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Lobster Regular */
+
+@font-face {
+    font-family: 'lobsterregular';
+    src: url('../fonts/lobster/lobster-regular-webfont.eot');
+    src: url('../fonts/lobster/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lobster/lobster-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lobster/lobster-regular-webfont.woff') format('woff'),
+         url('../fonts/lobster/lobster-regular-webfont.ttf') format('truetype'),
+         url('../fonts/lobster/lobster-regular-webfont.svg#lobsterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

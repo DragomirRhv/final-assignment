@@ -1,0 +1,60 @@
+body {
+    background: radial-gradient(ellipse at center, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%) no-repeat;
+}
+
+header {
+    height: 300px;
+}
+
+header div {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+header div div {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header div div span {
+    font-family: 'lobsterregular';
+    color: #fff;
+    font-size: 38px;
+    position: absolute;
+    top: -40px;
+    transition: 0.3s;
+}
+
+
+header div div span.visible {
+    top: 75px;
+}
+
+header div div p {
+    outline: none;
+    text-decoration: none;
+    font-size: 38px;
+    font-family: 'liu_jian_mao_caoregular';
+    padding: 20px;
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 2px 17px 5px rgba(0,0,0,0.75);
+    width: 300px;
+    display: inline-block;
+    transition:0.3s;
+}
+
+header div div p span.hit {
+    animation: move 0.3s forwards;
+}
+
+header div div p.hanging {
+    transform:rotate(-45deg);
+    transition-delay: 0.25s;
+}
+

@@ -1,0 +1,283 @@
+@import url('fonts.css');
+
+@keyframes  open-border {
+    0% {
+        border-right: 107px solid #fff;
+    }
+    100% {
+        border-right: 656px solid #fff;
+    }
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    10%{
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    30%{
+        opacity:0;
+    }
+    35% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Search Button */
+.heading {
+    margin-bottom: 90px;
+}
+
+form {
+    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 2px solid #000;
+    border-right: none;
+    padding: 5px;
+    padding-left: 15px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 16px;
+    color: #000 !important;
+}
+
+.searchTerm:focus{
+    color: #00B4CC;
+}
+
+.searchButton {
+    width: 60px;
+    height: 36px;
+    border: 2px solid #000;
+    background: #ededed;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 0px;
+}
+
+.wrap{
+    width: 20%;
+    position: absolute;;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+/* End search button */
+
+body {
+    background: radial-gradient(ellipse at center, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%) no-repeat;
+    padding: 50px;
+}
+
+.heading .logout {
+    padding-left: 100px;
+}
+
+.heading .logout a {
+    outline: none;
+    text-decoration: none;
+}
+
+.heading .logout a span {
+    margin-left: 10px;
+    color: #000;
+}
+
+
+table {
+    margin-top: 100px;
+}
+
+form .noMatch p {
+    display: inline-block;
+    width: 25%;
+    transform: translate(120%, 75%);
+    font-size: 20px;
+    letter-spacing: 2px;
+    background: #8dadc9;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+.heading .text {
+    text-align: center;
+}
+
+.heading .text span {
+    font-size: 50px;
+    font-family: 'liu_jian_mao_caoregular';
+}
+
+.heading .text span.btext {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+table {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 20px;
+    text-align: left;
+    background: #fff !important;
+    height: 500px;
+    width: 80%;
+    border-radius: 8px;
+}
+
+form table thead {
+    background: #36304A;
+    color: #fff;
+    display: block;
+    padding: 20px;
+    text-align: left;
+    border-radius: 8px 8px 0px 0px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+form table thead th {
+    width: 10%;
+    text-align: center;
+}
+
+form table tbody {
+    display: block;
+}
+
+form table tbody tr {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    color: #AEAEAE;
+}
+
+form table tbody tr:hover {
+    color: #000;
+}
+
+form table tbody tr:nth-child(even) {
+    background: #F5F5F5;
+} 
+
+form table tbody tr td {
+    width: 15%;
+    text-align: center;
+    padding: 10px;
+}
+
+form table tbody tr td a {
+    margin-right: 20px;
+    outline: none;
+    text-decoration: none;
+}
+
+form table tbody tr td.num {
+    margin-left: 13px;
+}
+
+form table tbody tr td.placet {
+    margin-right: 20px;
+}
+
+.glyphicon {
+    top: 4px !important;
+}
+
+.addtask {
+    text-align: center;
+}
+
+.addtask a {
+    padding: 15px 50px 15px 15px;
+    background: #36304A;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+.addtask a:hover,
+.addtask a:visited,
+.addtask a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+.addtask a:hover {
+    color: #fff;
+}
+
+.addtask a img {
+    margin-right: 20px;
+}

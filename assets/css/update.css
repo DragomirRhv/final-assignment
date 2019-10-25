@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'liu_jian_mao_caoregular';
+    src: url('../fonts/liuji/liujianmaocao-regular-webfont.eot');
+    src: url('../fonts/liuji/liujianmaocao-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.woff2') format('woff2'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.woff') format('woff'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.ttf') format('truetype'),
+         url('../fonts/liuji/liujianmaocao-regular-webfont.svg#liu_jian_mao_caoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background: radial-gradient(ellipse at center, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%) no-repeat;
+    padding: 110px;
+    text-align: center;
+}
+
+.frame {
+    position: relative;
+    border: 4px solid #C47274;
+    border-radius: 2px;
+    width: 70%;
+    display: inline-block;
+}
+
+.frame .updatetask {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    background-color: #E4E8F1;
+    padding: 50px 20px;
+    padding-left: 130px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    font-family: 'liu_jian_mao_caoregular';
+    font-weight: 500;
+    text-align: left;
+}
+
+h2:after {
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #000;
+    display: block;
+    margin-top: 10px;
+}
+
+form input {
+    display: inline-block;
+    height: 40px;
+    width: 70%;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+form .hold {
+    width: 73%;
+    display: inline-block;
+    text-align: left;
+    box-sizing: border-box
+}
+
+form .hold .date {
+    width: 40%;
+}
+
+form .hold select {
+    display: block;
+    height: 40px;
+    width: 55%;
+    margin-bottom: 30px;
+    outline: none;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+form input.sbmt_btn_four {
+    background-color: #42c964;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    width: 73%;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+form select#status_up {
+    margin-bottom: 100px;
+}
+
+.frame .updatetask ol {
+    background: rgba(1,1,1,0.3);
+    color: #fff;
+    border-radius: 6px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size: 18px;
+    text-align: initial;
+}
+
+.frame .updatetask ol li {
+    margin: 10px;
+}

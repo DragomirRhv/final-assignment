@@ -1,0 +1,342 @@
+@import url(crak.css);
+
+body {
+    background: radial-gradient(ellipse at center, rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%) no-repeat;
+}
+
+header {
+    height: 300px;
+}
+
+header div {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+header div div {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header div div span {
+    font-family: 'lobsterregular';
+    color: #fff;
+    font-size: 38px;
+    position: absolute;
+    top: -40px;
+    transition: 0.3s;
+}
+
+
+header div div span.visible {
+    top: 75px;
+}
+
+header div div p {
+    outline: none;
+    text-decoration: none;
+    font-size: 38px;
+    font-family: 'liu_jian_mao_caoregular';
+    padding: 20px;
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 1px 2px 17px 5px rgba(0,0,0,0.75);
+    width: 300px;
+    display: inline-block;
+    transition:0.3s;
+}
+
+header div div p span.hit {
+    animation: move 0.3s forwards;
+}
+
+header div div p.hanging {
+    transform:rotate(-45deg);
+    transition-delay: 0.25s;
+}
+
+
+section {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    padding-top: 100px;
+}
+
+section ol {
+    background: rgba(1,1,1,0.3);
+    color: #fff;
+    border-radius: 6px;
+    list-style-type: decimal;
+    list-style-position: inside;
+    padding-left: 480px;
+    padding-top:20px;
+    padding-bottom:20px;
+    font-size: 18px;
+}
+
+section ol li {
+    margin: 10px;
+}
+
+.signin {
+    display: inline-block;
+    height: 700px;
+    width: 45%;
+    background-color: #fff;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.signin form {
+    margin-bottom: 20px;
+}
+
+.signin form p {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'liu_jian_mao_caoregular';
+}
+
+.signin form input {
+    display: block;
+    height: 40px;
+    width: 93%;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.signin form input#submit_btn_one {
+    background-color: #4B89DC;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    width: 100%;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+.signin form a {
+    outline: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.signin form a:focus,
+.signin form a:visited,
+.signin form a:hover {
+    outline: none;
+    text-decoration: none;
+}
+
+section .frame {
+    position: relative;
+    border: 4px solid #C47274;
+    border-radius: 2px;
+    transition:opacity 1.3s linear;
+    opacity: 1;
+}
+
+section .frame .triangle {
+    width: 0px;
+    height: 0;
+    border-left: 1px solid transparent;
+    border-right: 107px solid transparent;
+    border-top: 700px solid #fff;
+    position: absolute;
+    top: 0px;
+    left: 535px;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    animation: open-border 3s forwards;
+}
+
+section .frame .triangle span {
+    position: absolute;
+    right: 0px;
+    top: -440px;
+    margin-right: -515px;
+    width: 341px;
+}
+
+section .frame .triangle span.stamp {
+    transform: rotate(12deg);
+    color: #555;
+    font-size: 3rem;
+    font-weight: 700;
+    border: 0.25rem solid #555;
+    display: inline-block;
+    padding: 0.25rem 1rem;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    font-family: 'Courier';
+    -webkit-mask-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png');
+    -webkit-mask-size: 944px 604px;
+    mix-blend-mode: multiply;
+}
+
+section .frame .triangle span.stamp.is-approved {
+    color: #0A9928;
+    border: 0.5rem solid #0A9928;
+    -webkit-mask-position: 13rem 6rem;
+    transform: rotate(-14deg);
+    border-radius: 0;
+    z-index: 100!important;
+    animation: visible 5s forwards;
+} 
+
+
+section .frame .signin div#line1 {
+    width: 190px;
+    height: 2px;
+    display: inline-block;
+    background-color: #c9c9c9;
+    position: relative;
+    top: -3px;
+}
+
+section .frame .signin p#social-p {
+    display: inline-block;
+    font-family: 'lobsterregular';
+    margin-bottom: 50px;
+}
+
+section .frame .signin div#line2 {
+    width: 190px;
+    height: 2px;
+    display: inline-block;
+    background-color: #c9c9c9;
+    position: relative;
+    top: -3px;
+}
+
+section .frame .signin .social_icons {
+    text-align: center;
+}
+
+section .frame .signin .social_icons .holders {
+    display: inline-block;
+    width: 25%;
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+section .frame .signin .social_icons .holders .twtr-holder {
+    position: relative;
+    text-align: left;
+    background: #26B2E9;
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #4B89DC;
+}
+
+section .frame .signin .social_icons .holders .googl-holder a,
+section .frame .signin .social_icons .holders .face-holder a,
+section .frame .signin .social_icons .holders .twtr-holder a {
+    display: block;
+    outline: none;
+    text-decoration: none;
+}
+
+
+section .frame .signin .social_icons .holders .googl-holder:visited,
+section .frame .signin .social_icons .holders .googl-holder:focus,
+section .frame .signin .social_icons .holders .face-holder a:visited,
+section .frame .signin .social_icons .holders .face-holder a:focus,
+section .frame .signin .social_icons .holders .twtr-holder a:visited,
+section .frame .signin .social_icons .holders .twtr-holder a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+section .frame .signin .social_icons .holders .twtr-holder span {
+    position: absolute;
+    top: 14px;
+    left: 60px;
+    color: #fff;
+}
+
+section .frame .signin .social_icons .holders .face-holder {
+    position: relative;
+    text-align: left;
+    background: #315295;
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #2c4985;
+}
+
+section .frame .signin .social_icons .holders .face-holder span {
+    position: absolute;
+    top: 14px;
+    left: 50px;
+    color: #fff;
+}
+
+section .frame .signin .social_icons .holders .googl-holder {
+    position: relative;
+    text-align: left;
+    background: #b8566b;
+    border-radius: 6px;
+    padding: 5px;
+    border: 1px solid #914153;
+}
+
+section .frame .signin .social_icons .holders .googl-holder span {
+    position: absolute;
+    top: 14px;
+    left: 58px;
+    color: #fff;
+}
+
+
+section .frame .signup {
+    display: inline-block;
+    height: 700px;
+    width: 55%;
+    background-color: #E4E8F1;
+    padding: 50px 20px;
+    padding-left: 130px;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+section .frame .signup form p:nth-child(1) {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-family: 'liu_jian_mao_caoregular';
+}
+
+section .frame .signup form input {
+    display: block;
+    height: 40px;
+    width: 93%;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.signup form input#submit_btn_two {
+    background-color: #F4B802;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
